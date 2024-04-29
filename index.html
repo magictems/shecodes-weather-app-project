@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>SheCodes weather app</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+            id="search-input"
+          />
+          <input type="submit" value="Search" id="button" />
+        </form>
+      </header>
+      <main>
+        <div id="weather">
+          <div>
+            <h1 id="present-city" class="present-city">London</h1>
+            <p id="city-two">
+              <span id="present-date"></span>, moderate rain <br />
+              Humidity: <strong>90%</strong>, Wind: <strong>9.2km/h</strong>
+            </p>
+          </div>
+          <div id="temp">
+            <span id="temp-icon">☀️</span>
+            <span id="present-temp">20</span
+            ><span id="temp-degree">°C</span>
+          </div>
+        </div>
+      </main>
+      <footer>
+         This project was coded by <a href="https://github.com/magictems" target="_blank"> itsekure oluwatosin</a>, is on
+    <a href="https://github.com/magictems/week-7-tut-APP"target="_blank">Github</a> and hosted 
+    <a href="https://shecodes-tuts.netlify.app/" target="_blank">on netlify</a>
+  </footer>
+
+    </div>
+  </body>
+
+  <script src="script.js"></script>

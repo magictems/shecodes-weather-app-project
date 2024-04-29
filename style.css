@@ -1,0 +1,87 @@
+body {
+  background-color: #f4eeff;
+  font-family: "Montserrat", sans-serif;
+}
+header {
+  border-bottom: 2px solid #f4f3f5;
+  /* bottom: 0; */
+  padding-bottom: 25px;
+}
+
+.container {
+  width: 620px;
+  background: white;
+  padding: 35px;
+  margin: 62px auto;
+  box-shadow: 0 20px 55px rgba(60, 40, 90, 0.06);
+  border-radius: 15px;
+}
+#search-input {
+  padding: 22px;
+  width: 500px;
+  border: 0;
+  color: #000;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #f4eeff;
+}
+
+main {
+  padding: 40px 0;
+}
+
+#button {
+  background-color: #885df1;
+  margin-left: 4px;
+  padding: 22px;
+  border-radius: 4px;
+  color: white;
+  border: 0;
+  font-size: 15px;
+  width: 110px;
+  cursor: pointer;
+}
+
+#weather {
+  justify-content: space-between;
+  display: flex;
+}
+
+#present-city {
+  font-weight: 900;
+  font-size: 40px;
+  margin: 0 0 0 0;
+  font-family:'Times New Roman', Times, serif;
+}
+#city-two {
+  color: #aab8b8;
+  font-weight: 400;
+  font-size: 15px;
+}
+strong {
+  color: #c50d66;
+}
+
+#temp-icon {
+  font-size: 38px;
+  position: relative;
+  margin-right: 5px;
+  top: -6px;
+}
+#present-temp {
+  font-size: 75px;
+  font-weight: 900;
+}
+#temp-degree {
+  font-size: 30px;
+  position: relative;
+  top: -35px;
+}
+footer {
+  color: #aab8b8;
+  border-top: 2px solid #f4f3f5;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 15px;
+}
