@@ -31,27 +31,43 @@
       <main>
         <div id="weather">
           <div>
-            <h1 id="present-city" class="present-city">London</h1>
+            <h1 id="city" class="present-city"></h1>
             <p id="city-two">
-              <span id="present-date"></span>, moderate rain <br />
-              Humidity: <strong>90%</strong>, Wind: <strong>9.2km/h</strong>
+              <span id="present-time"></span>,
+              <span id="description"></span>
+              <br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div id="temp">
-            <span id="temp-icon">☀️</span>
-            <span id="present-temp">20</span
-            ><span id="temp-degree">°C</span>
+            <div id="temp-icon"></div>
+            <div class="present-temp" id="temperature"></div>
+            <div id="temp-degree">°C</div>
           </div>
         </div>
       </main>
-      
-      <footer>
-         This project was coded by <a href="https://github.com/magictems" target="_blank"> Itsekure Oluwatosin</a>, is
-          <a href="https://github.com/magictems/shecodes-weather-app-project"target="_blank"> on Github</a> and 
-    <a href="https://first-shecodes-weather-app.netlify.app/" target="_blank">hosted on netlify</a>
-  </footer>
 
+      <footer>
+        This project was coded by
+        <a href="https://github.com/magictems" target="_blank">
+          Itsekure Oluwatosin</a
+        >, is
+        <a
+          href="https://github.com/magictems/shecodes-weather-app-project"
+          target="_blank"
+        >
+          on Github</a
+        >
+        and
+        <a
+          href="https://first-shecodes-weather-app.netlify.app/"
+          target="_blank"
+          >hosted on netlify</a
+        >
+      </footer>
     </div>
   </body>
 
   <script src="script.js"></script>
+</html>
