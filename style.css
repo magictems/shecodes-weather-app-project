@@ -5,7 +5,7 @@ body {
 header {
   border-bottom: 2px solid #f4f3f5;
   /* bottom: 0; */
-  padding-bottom: 25px;
+  padding: 0 0 30px 0;
 }
 
 .container {
@@ -18,7 +18,7 @@ header {
 }
 #search-input {
   padding: 22px;
-  width: 500px;
+  width: 70%;
   border: 0;
   color: #000;
   font-size: 15px;
@@ -48,35 +48,40 @@ main {
   display: flex;
 }
 
-.present-city {
-  font-weight: 900;
-  font-size: 40px;
-  margin: 0 0 0 0;
-  font-family: "Times New Roman", Times, serif;
+#present-city {
+  
+  font-size: 37px;
+  margin: 0;
+line-height: 47px;
 }
 #city-two {
+  line-height: 24px;
   color: #aab8b8;
   font-weight: 400;
   font-size: 15px;
 }
+#temp {
+  display: flex;
+}
+
 strong {
   color: #c50d66;
 }
 
 #temp-icon {
-  font-size: 38px;
-  position: relative;
-  margin-right: 5px;
-  top: -6px;
+ width: 68px;
+  height: 68px;
 }
 .present-temp {
   font-size: 75px;
   font-weight: 900;
+  line-height: 80px;
+  margin-top: 9px;
 }
 #temp-degree {
   font-size: 30px;
-  position: relative;
-  top: -35px;
+ margin-top: 6px;
+ font-weight: bolder;
 }
 footer {
   color: #aab8b8;
@@ -85,3 +90,4 @@ footer {
   padding-top: 10px;
   font-size: 15px;
 }
+
