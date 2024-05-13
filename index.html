@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="shortcut icon" href="favicon copy.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
-    <title>SheCodes weather app</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <title>my weather App</title>
   </head>
   <body>
-    <div class="container">
+    <div class="weather-app">
       <header>
-        <form id="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
-            class="search-input"
-            id="search-input"
+            id="search-form-input"
+            class="search-form-input"
           />
           <input type="submit" value="Search" id="button" />
         </form>
       </header>
       <main>
-        <div id="weather">
+        <div id="weather-data">
           <div>
-            <h1 id="city" class="present-city"></h1>
-            <p id="city-two">
-              <span id="present-time"></span>,
+            <h1 class="weather-city" id="city"></h1>
+            <p class="weather-details">
+              <span id="time"></span>,
               <span id="description"></span>
               <br />
               Humidity: <strong id="humidity"></strong>, Wind:
               <strong id="wind-speed"></strong>
             </p>
           </div>
-          <div id="temp">
+          <div class="weather-temperature-wrap">
             <div id="icon"></div>
-            <div class="present-temp" id="temperature"></div>
-            <div id="temp-degree">°C</div>
-            <div id="temp-emoji"></div>
+            <div class="weather-temperature" id="temperature"></div>
+            <div class="weather-unit">°C</div>
           </div>
         </div>
+        <div class="weather-forecast" id="forecast"></div>
       </main>
 
       <footer>
@@ -68,7 +68,6 @@
         >
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
-
-  <script src="script.js"></script>
 </html>
